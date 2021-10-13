@@ -13,11 +13,11 @@ public class ArticuloService {
 	private ArrayList<ArticuloModel> articulos = new ArrayList<>();
 	private int contador = 0;
 	
-	public ArticuloModel getArticle(Integer id) {
+	public ArticuloModel getArticulo(Integer id) {
 		return (ArticuloModel) articulos.stream().filter(x -> x.getId() == id).toArray()[0];
 	}
 	
-	public ArrayList<ArticuloModel> getArticle(){
+	public ArrayList<ArticuloModel> getArticulos(){
 		return articulos;
 	}
 

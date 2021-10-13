@@ -21,13 +21,13 @@ public class ArticuloController {
 	
 	@GetMapping()
 	public ArrayList<ArticuloModel> getArticulo() {
-		return articuloBussiness.getArticle();
+		return articuloBussiness.getArticulos();
 	}
 
 	@GetMapping(path = "/{id}")
 	public ArticuloModel getUsuario(@PathVariable("id")Integer id) {
 		
-		return articuloBussiness.getArticle(id);
+		return articuloBussiness.getArticulo(id);
 	}
 	
 	@PostMapping()
