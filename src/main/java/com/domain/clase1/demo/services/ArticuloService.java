@@ -39,6 +39,7 @@ public class ArticuloService {
 		int index = articulos.indexOf(articuloBD);
 		articulos.set(index, articulo);
 		return articulo;
+		//probando
 		
 	}
 	
